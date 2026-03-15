@@ -3,6 +3,12 @@ name: lint check
 on: push
 
 jobs:
-    name: lint check job
-    uses: 
-    run: echo 'check lint'
+  check lint:
+  run-on: ubuntu-latest
+
+  steps:
+    - name : checkout code
+    - usese: actions/checkout@v4
+
+    - name: say hello
+    - run: echo "Hello workflows"
