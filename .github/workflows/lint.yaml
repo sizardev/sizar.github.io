@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name : checkout code
-      - usese: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: say hello
       - run: echo "Hello workflows"
