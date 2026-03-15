@@ -1,0 +1,14 @@
+name: lint check
+
+on: push
+
+jobs:
+  check-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: say hello
+        run: echo "Hello workflows"
