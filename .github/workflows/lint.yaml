@@ -1,0 +1,8 @@
+name: lint check
+
+on: push
+
+jobs:
+    name: lint check job
+    uses: 
+    run: echo 'check lint'
